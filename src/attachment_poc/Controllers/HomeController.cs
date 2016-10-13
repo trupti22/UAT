@@ -46,8 +46,8 @@ namespace attachment_poc.Controllers
                 else
                     fileNameTrim = filename;
                 /**/
-                filename = hostingEnv.WebRootPath + $@"\Attchment\{fileNameTrim}";
-                
+               // filename = hostingEnv.WebRootPath + $@"\Attchment\{fileNameTrim}";
+                filename = hostingEnv.ContentRootPath +$@"\Uploads\{fileNameTrim}";
                 using (FileStream fs=System.IO.File.Create(filename))
                 {
                     file.CopyTo(fs);
