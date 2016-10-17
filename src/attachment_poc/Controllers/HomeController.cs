@@ -29,7 +29,7 @@ namespace attachment_poc.Controllers
 
         public IActionResult UploadFiles()
         {
-            String connectionString = "Data Source = 203.193.138.52,6148; Initial Catalog = POC_UAT; Persist Security Info = True; User ID = ttsh_crio; Password = Newuser@123";
+            /*String connectionString = "Data Source = 203.193.138.52,6148; Initial Catalog = POC_UAT; Persist Security Info = True; User ID = ttsh_crio; Password = Newuser@123";
             String sql = "SELECT * FROM fileUpload";
             SqlCommand cmd = new SqlCommand(sql);
             var model = new List<fileU>();
@@ -56,7 +56,8 @@ namespace attachment_poc.Controllers
                     //Response.Body.WriteAsync(bytes, 0, bytes.Length);
                 }
             }            
-            return View(model);
+            return View(model);*/
+             return View();
         }
 
         public IActionResult download()
